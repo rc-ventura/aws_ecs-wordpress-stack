@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   wordpress:
-    image: wordpress
+    image: rcventura/wordpress:v1.0.0
     restart: always
     depends_on: [ "db" ]
     ports:
