@@ -10,7 +10,7 @@ spec:
   capacity: 
     storage: 1Gi
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   local:
     path: /mnt
   nodeAffinity:
@@ -21,3 +21,4 @@ spec:
           operator: In
           values:
           - minikube
+          

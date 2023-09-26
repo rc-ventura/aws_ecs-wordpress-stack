@@ -399,7 +399,6 @@ FodyWeavers.xsd
 
 # Kube
 kubectl*
-minikube*
-/kube/example
 kompose
+minikube-linux-amd64
 
