@@ -43,7 +43,7 @@ spec:
         - containerPort: 3306
           name: mysql
         volumeMounts:
-        - name: mysql-pvc
+        - name: mysql-data
           mountPath: /var/lib/mysql
   volumeClaimTemplates:
   - metadata:

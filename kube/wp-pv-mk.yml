@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv
+  name: wp-pv-mk
 spec:
-  storageClassName: local-storage
+  storageClassName: wp-local-storage
   claimRef:
-    name: mysql-volume
+    name: worpress-volume
     namespace: default
   capacity: 
     storage: 1Gi

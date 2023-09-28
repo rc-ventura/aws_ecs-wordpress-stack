@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: wordpress-service
+  name: wordpress-service-np
 spec:
   type: NodePort
   selector:
