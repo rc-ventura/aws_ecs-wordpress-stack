@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: wordpress-service
+  labels: 
+    app: wordpress
 spec:
   type: LoadBalancer
   selector:

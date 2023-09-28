@@ -5,8 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: mysql
-      tier: db
+      app: mysql-statefulset
   serviceName: "database"
   replicas: 3
   updateStrategy:
@@ -14,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mysql
+        app: mysql-statefulset
     spec:
       containers:
       - name: mysql
@@ -44,7 +43,7 @@ spec:
         - containerPort: 3306
           name: mysql
         volumeMounts:
-        - name: mysql-data
+        - name: mysql-pvc
           mountPath: /var/lib/mysql
   volumeClaimTemplates:
   - metadata:
