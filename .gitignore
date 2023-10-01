@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Kube
+kubectl*
+kompose
+minikube-linux-amd64
+
